@@ -1,0 +1,1 @@
+visible = oBubble.visible;
