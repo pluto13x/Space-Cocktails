@@ -2,10 +2,6 @@ upKey = keyboard_check_pressed(vk_up);
 downKey = keyboard_check_pressed(vk_down);
 acceptKey = keyboard_check_pressed(ord("Z")) or keyboard_check_pressed(ord("Y"));
 
-//find length of current level
-optionLength = array_length(option[menuLevel]);
-
-
 //selectuj opciju
 position += downKey - upKey;
 if position >= optionLength {
@@ -25,12 +21,15 @@ if acceptKey {
 					break;
 				case 1: //settings
 					menuLevel = 1;
+				    position = 0;
 					break;
 				case 2: //quit game
 					game_end();
 				    break;
 				break;
 			}
+			break;
+			
 				
 		case 1: //settings menu
 			switch(position) {
@@ -45,9 +44,10 @@ if acceptKey {
 				    break;
 				case 3: //Back
 					menuLevel = 0;
-					break;
+					position = 1;
 				    break;	
-				break;
 			}
-	}
+			break;
+	}   
+	optionLength = array_length(option[menuLevel]);
 }

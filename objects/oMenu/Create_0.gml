@@ -5,7 +5,6 @@ margin = 50;
 lineSpacing = 50;
 
 position = 0;
-optionLength = 0;
 menuLevel = 0;
 
 //main menu
@@ -18,4 +17,6 @@ option[1,0] = "Window size";
 option[1,1] = "Brightness";
 option[1,2] = "Controls";
 option[1,3] = "Back";
+
+optionLength = array_length(option[0]);
 
