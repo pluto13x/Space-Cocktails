@@ -14,24 +14,32 @@ if position < 0 {
 //funkcionalne opcije
 if acceptKey {
 	switch(menuLevel) { 
-		case 0: //main menu
+		case 0: //main and ingame menu
 			switch(position) {
-				case 0: //start game / main menu
+				case 0:
+				    //"start game"
 					if iMenuControl.menuType == "main" {
+						if instance_exists(iCupControl) {
+							iCupControl.makeCup = true;
+						}
 						room_goto(rMixingStation);
 					}
+					//"resume game"
 					else {
 						instance_destroy(id);	
 					}
 					break;
-				case 1: //settings
+				case 1: 
+				    //"settings"
 					menuLevel = 1;
 				    position = 0;
 					break;
-				case 2: //quit game / main menu
+				case 2: 
+				    //"quit game"
 					if iMenuControl.menuType == "main" {
 						game_end(0);
 					}
+					//"main menu"
 					else {
 						iMenuControl.menuType = "main";
 						room_goto(rMainMenu);
