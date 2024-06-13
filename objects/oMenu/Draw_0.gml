@@ -4,5 +4,9 @@ draw_set_font(Manaspace);
 draw_set_valign(fa_top);
 draw_set_halign(fa_left)
 for (var i = 0; i < optionLength; i += 1) {
-	draw_text(x + margin, y + margin + lineSpacing * i, option[i]);
+	var optionColor = c_white;
+	if i == position {
+		optionColor = c_yellow;
+	}
+	draw_text_color(x + margin, y + margin + lineSpacing * i, option[menuLevel, i], optionColor, optionColor, optionColor, optionColor, 1);
 }
