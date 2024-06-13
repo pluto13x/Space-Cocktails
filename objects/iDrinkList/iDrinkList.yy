@@ -29,7 +29,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sDrinkList",
+    "path":"sprites/sDrinkList/sDrinkList.yy",
+  },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

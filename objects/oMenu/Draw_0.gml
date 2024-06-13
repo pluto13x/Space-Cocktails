@@ -1,7 +1,3 @@
-//center sprite
-x = room_width / 2 - width / 2;
-y = room_height / 2 - height / 2;
-
 draw_sprite_ext(sprite_index, image_index, x, y, width/sprite_width, height/sprite_height, 0, c_white, 1);
 
 draw_set_font(Manaspace);
