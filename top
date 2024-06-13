@@ -1,0 +1,66 @@
+[33mcommit 1fa49b83c455a94883b35244e40fc91572e31516[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmenu[m[33m)[m
+Author: pluto13x <saramilosavljevic6@gmail.com>
+Date:   Thu Jun 13 17:06:49 2024 +0200
+
+    organized layers in rMixingStation, fucked instance creation order
+
+[33mcommit 1ffe3af6466643a11a0ad384df6b1b1b524414f6[m
+Author: pluto13x <saramilosavljevic6@gmail.com>
+Date:   Thu Jun 13 16:43:02 2024 +0200
+
+    functional main menu
+
+[33mcommit 5797c0c7130c5dacbb68cb20d1f70943762be601[m
+Author: pluto13x <saramilosavljevic6@gmail.com>
+Date:   Thu Jun 13 04:51:58 2024 +0200
+
+    added menu and submenu, bug when switching from longer to shorter menu
+
+[33mcommit 751d585d9fdf1ed53169a19d5ab4d2d13d1cc7e1[m
+Author: pluto13x <saramilosavljevic6@gmail.com>
+Date:   Wed Jun 12 04:34:52 2024 +0200
+
+    draw nonfunctional menu
+
+[33mcommit ecbf8dd61e8e15278d9e038a76d892a4f573ef5a[m[33m ([m[1;31morigin/main[m[33m, [m[1;32mmain[m[33m)[m
+Author: pluto13x <saramilosavljevic6@gmail.com>
+Date:   Sat Jun 8 22:04:15 2024 +0200
+
+    fixed .gitattributes, again
+
+[33mcommit e1c0de6b0ef4dfb97bb3b1c178c1e83420f89a56[m
+Author: pluto13x <saramilosavljevic6@gmail.com>
+Date:   Sat Jun 8 22:02:51 2024 +0200
+
+    fix .gitattributes
+
+[33mcommit 7687262188a9084a4a2c7b9a3e80b42a7d3c9be4[m
+Author: pluto13x <saramilosavljevic6@gmail.com>
+Date:   Sat Jun 8 21:52:00 2024 +0200
+
+    add gitattributes
+
+[33mcommit 42e963818eec313f1d5a2cd73058ed02c32cfa45[m
+Merge: 9484338 8d3ddc4
+Author: pluto13x <saramilosavljevic6@gmail.com>
+Date:   Sat Jun 8 21:06:55 2024 +0200
+
+    Renamed project
+
+[33mcommit 8d3ddc400a07069d70e38c8a447eecaee3dde4ba[m[33m ([m[1;32mwhoops[m[33m)[m
+Author: pluto13x <saramilosavljevic6@gmail.com>
+Date:   Sat Jun 8 21:01:44 2024 +0200
+
+    renamed project
+
+[33mcommit 9484338f65809bfa4f44e84c12f24372eed2ae8f[m
+Author: pluto13x <saramilosavljevic6@gmail.com>
+Date:   Sat Jun 8 20:17:42 2024 +0200
+
+    testing git in gamemaker
+
+[33mcommit f5187548220e7935db16c8ebdcea38fd7092448c[m
+Author: pluto13x <saramilosavljevic6@gmail.com>
+Date:   Sat Jun 8 20:14:19 2024 +0200
+
+    mix cocktails, give to alien, no grading system
