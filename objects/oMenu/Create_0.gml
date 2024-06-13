@@ -10,9 +10,16 @@ position = 0;
 menuLevel = 0;
 
 //main menu
-option[0,0] = "Start Game";
-option[0,1] = "Settings";
-option[0,2] = "Quit Game";
+if iMenuControl.menuType == "main" {
+	option[0,0] = "Start Game";
+	option[0,1] = "Settings";
+	option[0,2] = "Quit Game";
+}
+else {
+	option[0,0] = "Resume Game";
+	option[0,1] = "Settings";
+	option[0,2] = "Main Menu";
+}
 
 //settings menu
 option[1,0] = "Window size";

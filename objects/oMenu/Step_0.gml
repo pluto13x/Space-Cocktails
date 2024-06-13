@@ -16,15 +16,26 @@ if acceptKey {
 	switch(menuLevel) { 
 		case 0: //main menu
 			switch(position) {
-				case 0: //start game
-					room_goto(rMixingStation);
+				case 0: //start game / main menu
+					if iMenuControl.menuType == "main" {
+						room_goto(rMixingStation);
+					}
+					else {
+						instance_destroy(id);	
+					}
 					break;
 				case 1: //settings
 					menuLevel = 1;
 				    position = 0;
 					break;
-				case 2: //quit game
-					game_end();
+				case 2: //quit game / main menu
+					if iMenuControl.menuType == "main" {
+						game_end(0);
+					}
+					else {
+						iMenuControl.menuType = "main";
+						room_goto(rMainMenu);
+					}
 				    break;
 				break;
 			}

@@ -30,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"sPera",
+    "path":"sprites/sPera/sPera.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
