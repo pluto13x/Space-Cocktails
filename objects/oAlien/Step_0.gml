@@ -1,15 +1,15 @@
 if switchAliens {
 	oBubble.visible = false;
 	if goDown {
-		y += 5;
-		if y >= 800 {
+		y += 1;
+		if y >= room_height {
 			goDown = false;
 			sprite_index = iAlienControl.alienSprites[iAlienControl.whichAlien];
 		}	
 	}
 	else {
-		y -= 5;
-		if y <= 288 {
+		y -= 1;
+		if y <= defaulty {
 			switchAliens = false;
 			goDown = true;
 			oBubble.visible = true;
