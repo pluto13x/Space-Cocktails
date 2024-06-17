@@ -13,7 +13,7 @@ if pressed and mouse_check_button_released(mb_left) {
 	//stavi na tacnu
 	if place_meeting(x, y, oTray) {
 		x = oTray.x;
-		y = oTray.y;
+		y = oTray.y-15;
 		iCupControl.trayEmpty = false;
 	}
 	//daj vanzemaljcu
@@ -33,7 +33,7 @@ if pressed and mouse_check_button_released(mb_left) {
 	//u bar sobi vrati na tacnu 
 	else if room == rBar {
 		x = oTray.x;
-		y = oTray.y;
+		y = oTray.y-15;
 	}
 	//vrati na sto
 	else {

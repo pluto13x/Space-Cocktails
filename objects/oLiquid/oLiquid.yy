@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sLiquid",
-    "path":"sprites/sLiquid/sLiquid.yy",
+    "name":"sShakerLiquid",
+    "path":"sprites/sShakerLiquid/sShakerLiquid.yy",
   },
   "spriteMaskId":{
     "name":"sCup",

@@ -8,12 +8,13 @@ if mouse_check_button_pressed(mb_right) and position_meeting(mouse_x, mouse_y, o
 		howFull = 0;
 	}
 	else { //ako je prazan, obrni jigger
-		image_yscale *= -1;
-		if image_yscale < 0 {
-			capacity = 50;//ml
+		if capacity == 50 {
+			sprite_index = sJigger25;
+			capacity = 25;//ml
 		}
 		else {
-			capacity = 25;//ml
+			sprite_index = sJigger50;
+			capacity = 50;//ml
 		}
 	}
 }
