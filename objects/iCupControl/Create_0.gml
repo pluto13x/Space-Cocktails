@@ -3,8 +3,8 @@ makeCup = true; //služi da napravi (održi) čašu na mixing station stolu
 trayEmpty = true;				//ako odemo u drugu sobu i vratimo se
 cupExists = true; //true doklegod u NEKOJ sobi postoji čaša
 
-defaultx = 576;
-defaulty = 576;
+defaultx = 120;
+defaulty = 120;
 liquidColor = c_white; //boja tečnosti u čaši
 
 drinkListDone = true; 

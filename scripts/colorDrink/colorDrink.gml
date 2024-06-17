@@ -6,11 +6,7 @@ function colorDrink(newColor, existingColor) {
 }
 
 function createCup(defaultx, defaulty, color = c_white) {
-	var inst = instance_create_layer(defaultx, defaulty, "layerCup", oCup);
-	with inst {
-		image_xscale = 6;
-		image_yscale = 6;
-	}
+	instance_create_layer(defaultx, defaulty, "layerCup", oCup);
 }
 
 function emptyCup() {

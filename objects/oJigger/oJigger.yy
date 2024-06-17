@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sJigger",
-    "path":"sprites/sJigger/sJigger.yy",
+    "name":"sJigger25",
+    "path":"sprites/sJigger25/sJigger25.yy",
   },
   "spriteMaskId":null,
   "visible":true,
