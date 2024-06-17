@@ -41,7 +41,6 @@
     {"name":"oLiquid","order":3,"path":"objects/oLiquid/oLiquid.yy",},
     {"name":"oNotes","order":1,"path":"objects/oNotes/oNotes.yy",},
     {"name":"oPeachSchnapps","order":1,"path":"objects/oPeachSchnapps/oPeachSchnapps.yy",},
-    {"name":"oText","order":6,"path":"objects/oText/oText.yy",},
     {"name":"oTray","order":6,"path":"objects/oTray/oTray.yy",},
     {"name":"oVodka","order":2,"path":"objects/oVodka/oVodka.yy",},
     {"name":"rBar","order":1,"path":"rooms/rBar/rBar.yy",},

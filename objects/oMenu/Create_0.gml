@@ -1,8 +1,8 @@
-width = 100;
-height = 80;
+width = iMenuControl.width;
+height = iMenuControl.height;
 
-margin = 10;
-lineSpacing = 15;
+margin = iMenuControl.margin;
+lineSpacing = iMenuControl.lineSpacing;
 x = room_width / 2 - width / 2;
 y = room_height / 2 - height / 2;
 
