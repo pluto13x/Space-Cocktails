@@ -1,6 +1,6 @@
 upKey = keyboard_check_pressed(vk_up);
 downKey = keyboard_check_pressed(vk_down);
-acceptKey = keyboard_check_pressed(ord("Z")) or keyboard_check_pressed(ord("Y"));
+acceptKey = keyboard_check_pressed(ord("Z")) or keyboard_check_pressed(ord("Y")) or mouse_check_button_pressed(mb_left);
 
 //selectuj opciju
 position += downKey - upKey;
