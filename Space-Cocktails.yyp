@@ -72,6 +72,7 @@
     {"id":{"name":"rMainMenu","path":"rooms/rMainMenu/rMainMenu.yy",},},
     {"id":{"name":"rMixingStation","path":"rooms/rMixingStation/rMixingStation.yy",},},
     {"id":{"name":"colorDrink","path":"scripts/colorDrink/colorDrink.yy",},},
+    {"id":{"name":"menu","path":"scripts/menu/menu.yy",},},
     {"id":{"name":"sAlienControls","path":"sprites/sAlienControls/sAlienControls.yy",},},
     {"id":{"name":"sBar","path":"sprites/sBar/sBar.yy",},},
     {"id":{"name":"sBubble","path":"sprites/sBubble/sBubble.yy",},},

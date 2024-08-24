@@ -45,6 +45,7 @@
     {"name":"oVodka","order":2,"path":"objects/oVodka/oVodka.yy",},
     {"name":"rBar","order":1,"path":"rooms/rBar/rBar.yy",},
     {"name":"rMainMenu","order":2,"path":"rooms/rMainMenu/rMainMenu.yy",},
+    {"name":"menu","order":1,"path":"scripts/menu/menu.yy",},
     {"name":"sAlienControls","order":3,"path":"sprites/sAlienControls/sAlienControls.yy",},
     {"name":"sBubble","order":3,"path":"sprites/sBubble/sBubble.yy",},
     {"name":"sButtonBar","order":2,"path":"sprites/sButtonBar/sButtonBar.yy",},

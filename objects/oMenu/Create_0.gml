@@ -1,5 +1,7 @@
 width = iMenuControl.width;
 height = iMenuControl.height;
+image_xscale = width/sprite_width;
+image_yscale = height/sprite_height;
 
 margin = iMenuControl.margin;
 lineSpacing = iMenuControl.lineSpacing;
