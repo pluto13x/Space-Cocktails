@@ -1,5 +1,5 @@
 draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, 0, c_white, 1);
-draw_set_font(Manaspace);
+draw_set_font(_8BitHUD);
 draw_set_valign(fa_top);
 draw_set_halign(fa_left)
 for (var i = 0; i < optionLength; i += 1) {

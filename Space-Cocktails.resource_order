@@ -26,6 +26,8 @@
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"_8BitHUD","order":5,"path":"fonts/_8BitHUD/_8BitHUD.yy",},
+    {"name":"mago2","order":4,"path":"fonts/mago2/mago2.yy",},
     {"name":"iAlienControl","order":5,"path":"objects/iAlienControl/iAlienControl.yy",},
     {"name":"iCupControl","order":7,"path":"objects/iCupControl/iCupControl.yy",},
     {"name":"iDrinkList","order":1,"path":"objects/iDrinkList/iDrinkList.yy",},

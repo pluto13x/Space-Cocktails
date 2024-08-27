@@ -45,7 +45,8 @@
   },
   "name":"Space Bar",
   "resources":[
-    {"id":{"name":"Manaspace","path":"fonts/Manaspace/Manaspace.yy",},},
+    {"id":{"name":"_8BitHUD","path":"fonts/_8BitHUD/_8BitHUD.yy",},},
+    {"id":{"name":"mago2","path":"fonts/mago2/mago2.yy",},},
     {"id":{"name":"iAlienControl","path":"objects/iAlienControl/iAlienControl.yy",},},
     {"id":{"name":"iCupControl","path":"objects/iCupControl/iCupControl.yy",},},
     {"id":{"name":"iDrinkList","path":"objects/iDrinkList/iDrinkList.yy",},},
