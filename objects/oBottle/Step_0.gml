@@ -17,10 +17,12 @@ else if pressed and mouse_check_button_released(mb_left) {
 		iCupControl.howMuchOfDrink[drinkIdx] += 1;
 	}
 	else /**/
-	if position_meeting(mouse_x, mouse_y, oJigger) {
-		oJigger.drinkIdx = drinkIdx;
-		oJigger.howFull = oJigger.capacity; //napuni ceo jigger
-		oJigger.drinkColor = drinkColor;
+	if position_meeting(mouse_x, mouse_y, oJigger) {	
+		if oJigger.drinkIdx == -1 {
+			oJigger.drinkIdx = drinkIdx;
+			oJigger.drinkColor = drinkColor;
+			oJiggerLiquid.image_blend = drinkColor;
+		}
 	}
 	x = defaultx;
 	y = defaulty;

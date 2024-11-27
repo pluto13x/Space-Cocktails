@@ -9,4 +9,5 @@ with inst {
 	x = oCup.x;
 	y = oCup.y;
 	image_blend = iCupControl.liquidColor;
+	//ovo je tu jer se nova instanca čaše pravi kad se prenosi u drugu sobu
 }

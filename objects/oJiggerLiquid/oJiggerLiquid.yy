@@ -1,12 +1,11 @@
 {
   "$GMObject":"",
-  "%Name":"oBottle",
+  "%Name":"oJiggerLiquid",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oBottle",
+  "name":"oJiggerLiquid",
   "overriddenProperties":[],
   "parent":{
     "name":"mixing station",
@@ -30,10 +29,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
-  "spriteMaskId":{
-    "name":"sCranberryJuice",
-    "path":"sprites/sCranberryJuice/sCranberryJuice.yy",
+  "spriteId":{
+    "name":"sJigger25Liquid",
+    "path":"sprites/sJigger25Liquid/sJigger25Liquid.yy",
   },
+  "spriteMaskId":null,
   "visible":true,
 }
