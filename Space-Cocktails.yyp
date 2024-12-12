@@ -41,7 +41,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.6.2.162",
+    "IDEVersion":"2024.8.1.171",
   },
   "name":"Space Bar",
   "resources":[
@@ -50,7 +50,9 @@
     {"id":{"name":"iAlienControl","path":"objects/iAlienControl/iAlienControl.yy",},},
     {"id":{"name":"iCupControl","path":"objects/iCupControl/iCupControl.yy",},},
     {"id":{"name":"iDrinkList","path":"objects/iDrinkList/iDrinkList.yy",},},
+    {"id":{"name":"iInitNext","path":"objects/iInitNext/iInitNext.yy",},},
     {"id":{"name":"iMenuControl","path":"objects/iMenuControl/iMenuControl.yy",},},
+    {"id":{"name":"iSettings","path":"objects/iSettings/iSettings.yy",},},
     {"id":{"name":"oAlien","path":"objects/oAlien/oAlien.yy",},},
     {"id":{"name":"oBar","path":"objects/oBar/oBar.yy",},},
     {"id":{"name":"oBottle","path":"objects/oBottle/oBottle.yy",},},
@@ -71,6 +73,7 @@
     {"id":{"name":"oTray","path":"objects/oTray/oTray.yy",},},
     {"id":{"name":"oVodka","path":"objects/oVodka/oVodka.yy",},},
     {"id":{"name":"rBar","path":"rooms/rBar/rBar.yy",},},
+    {"id":{"name":"rInitialize","path":"rooms/rInitialize/rInitialize.yy",},},
     {"id":{"name":"rMainMenu","path":"rooms/rMainMenu/rMainMenu.yy",},},
     {"id":{"name":"rMixingStation","path":"rooms/rMixingStation/rMixingStation.yy",},},
     {"id":{"name":"colorDrink","path":"scripts/colorDrink/colorDrink.yy",},},
@@ -103,6 +106,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"rInitialize","path":"rooms/rInitialize/rInitialize.yy",},},
     {"roomId":{"name":"rMainMenu","path":"rooms/rMainMenu/rMainMenu.yy",},},
     {"roomId":{"name":"rMixingStation","path":"rooms/rMixingStation/rMixingStation.yy",},},
     {"roomId":{"name":"rBar","path":"rooms/rBar/rBar.yy",},},
