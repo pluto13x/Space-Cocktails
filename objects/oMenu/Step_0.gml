@@ -23,7 +23,7 @@ if acceptKey {
 						if instance_exists(iCupControl) {
 							iCupControl.makeCup = true;
 						}
-						room_goto(rMixingStation);
+						room_goto(rBar);
 					}
 					//"resume game"
 					else {

@@ -1,6 +1,6 @@
 {
   "$GMProject":"",
-  "%Name":"Space Bar",
+  "%Name":"Space-Cocktails",
   "AudioGroups":[
     {"$GMAudioGroup":"","%Name":"audiogroup_default","name":"audiogroup_default","resourceType":"GMAudioGroup","resourceVersion":"2.0","targets":-1,},
   ],
@@ -43,7 +43,7 @@
   "MetaData":{
     "IDEVersion":"2024.8.1.171",
   },
-  "name":"Space Bar",
+  "name":"Space-Cocktails",
   "resources":[
     {"id":{"name":"_8BitHUD","path":"fonts/_8BitHUD/_8BitHUD.yy",},},
     {"id":{"name":"mago2","path":"fonts/mago2/mago2.yy",},},
