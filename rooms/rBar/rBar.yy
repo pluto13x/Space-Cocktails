@@ -9,7 +9,6 @@
     {"name":"inst_5B25CFE5","path":"rooms/rBar/rBar.yy",},
     {"name":"inst_4423070C","path":"rooms/rBar/rBar.yy",},
     {"name":"inst_42565C90","path":"rooms/rBar/rBar.yy",},
-    {"name":"inst_7CF53146","path":"rooms/rBar/rBar.yy",},
     {"name":"inst_17840ECB","path":"rooms/rBar/rBar.yy",},
   ],
   "isDnd":false,
@@ -26,7 +25,6 @@
       ],"layers":[],"name":"layerBar","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"layerCustomer","depth":500,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_17840ECB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_17840ECB","objectId":{"name":"oAlien","path":"objects/oAlien/oAlien.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":51.0,"y":70.0,},
-        {"$GMRInstance":"v1","%Name":"inst_7CF53146","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7CF53146","objectId":{"name":"iAlienControl","path":"objects/iAlienControl/iAlienControl.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":218.0,"y":22.0,},
       ],"layers":[],"name":"layerCustomer","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Background","animationFPS":15.0,"animationSpeedType":0,"colour":4278190080,"depth":600,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Background","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":null,"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
