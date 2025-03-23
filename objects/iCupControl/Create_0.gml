@@ -7,12 +7,9 @@ defaultx = 120;
 defaulty = 120;
 liquidColor = c_white; //boja tečnosti u čaši
 
-drinkListDone = true; 
-//kad se sve flaše stave u sobu, drinkList je gotov
-//pa kad se stvore opet tokom menjanja soba, ne trebaju opet da se dodaju
-
-howMuchOfDrink = array_create(ds_list_size(drinkList), 0);
+howMuchOfDrink = undefined;
  //index pića ima value koliko ml tog pića ima u čaši
+ //puni se u iDrinkListDone
  
  
  

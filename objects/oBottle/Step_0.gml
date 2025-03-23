@@ -22,6 +22,7 @@ else if pressed and mouse_check_button_released(mb_left) {
 			oJigger.drinkIdx = drinkIdx;
 			oJigger.drinkColor = drinkColor;
 			oJiggerLiquid.image_blend = drinkColor;
+			show_debug_message(oJigger.drinkIdx);
 		}
 	}
 	x = defaultx;

@@ -1,19 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"iDrinkList",
+  "%Name":"oTextBox",
   "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":32,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"iDrinkList",
+  "name":"oTextBox",
   "overriddenProperties":[],
   "parent":{
-    "name":"mixing station",
-    "path":"folders/Objects/mixing station.yy",
+    "name":"bar",
+    "path":"folders/Objects/bar.yy",
   },
   "parentObjectId":null,
-  "persistent":true,
+  "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
   "physicsFriction":0.2,
@@ -31,9 +31,9 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"sDrinkList",
-    "path":"sprites/sDrinkList/sDrinkList.yy",
+    "name":"sTextBox",
+    "path":"sprites/sTextBox/sTextBox.yy",
   },
   "spriteMaskId":null,
-  "visible":false,
+  "visible":true,
 }

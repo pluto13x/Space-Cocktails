@@ -6,6 +6,7 @@ if mouse_check_button_pressed(mb_right) and position_meeting(mouse_x, mouse_y, o
 	if drinkIdx > -1  { //ako je pun, isprazni
 		drinkIdx = -1;
 		oJiggerLiquid.image_blend = c_white;
+		
 	}
 	else { //ako je prazan, obrni jigger
 		if capacity == 50 {

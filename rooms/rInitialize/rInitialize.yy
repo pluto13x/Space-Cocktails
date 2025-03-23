@@ -1,27 +1,20 @@
 {
   "$GMRoom":"v1",
   "%Name":"rInitialize",
-  "creationCodeFile":"",
+  "creationCodeFile":"rooms/rInitialize/RoomCreationCode.gml",
   "inheritCode":false,
   "inheritCreationOrder":false,
   "inheritLayers":false,
   "instanceCreationOrder":[
     {"name":"inst_6837FF27","path":"rooms/rInitialize/rInitialize.yy",},
     {"name":"inst_2464D85B","path":"rooms/rInitialize/rInitialize.yy",},
-    {"name":"inst_9B7B9C9","path":"rooms/rInitialize/rInitialize.yy",},
     {"name":"inst_7CF53146","path":"rooms/rInitialize/rInitialize.yy",},
     {"name":"inst_2FD6D735","path":"rooms/rInitialize/rInitialize.yy",},
-    {"name":"inst_6A927F1C","path":"rooms/rInitialize/rInitialize.yy",},
-    {"name":"inst_6216DA05","path":"rooms/rInitialize/rInitialize.yy",},
-    {"name":"inst_74B001FA","path":"rooms/rInitialize/rInitialize.yy",},
+    {"name":"inst_9B7B9C9","path":"rooms/rInitialize/rInitialize.yy",},
   ],
   "isDnd":false,
   "layers":[
-    {"$GMRInstanceLayer":"","%Name":"layerButtons","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v1","%Name":"inst_6A927F1C","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6A927F1C","objectId":{"name":"oButtonBar","path":"objects/oButtonBar/oButtonBar.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.25,"scaleY":0.25531518,"x":224.0,"y":53.829914,},
-        {"$GMRInstance":"v1","%Name":"inst_6216DA05","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6216DA05","objectId":{"name":"oButtonMixing","path":"objects/oButtonMixing/oButtonMixing.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.25,"scaleY":0.25,"x":224.0,"y":32.0,},
-        {"$GMRInstance":"v1","%Name":"inst_74B001FA","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_74B001FA","objectId":{"name":"oButtonSpawnCup","path":"objects/oButtonSpawnCup/oButtonSpawnCup.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.25,"scaleY":0.27581036,"x":224.0,"y":75.17407,},
-      ],"layers":[],"name":"layerButtons","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
+    {"$GMRInstanceLayer":"","%Name":"layerButtons","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[],"layers":[],"name":"layerButtons","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRInstanceLayer":"","%Name":"layerInfo","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_6837FF27","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6837FF27","objectId":{"name":"iMenuControl","path":"objects/iMenuControl/iMenuControl.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.5,"scaleY":0.5,"x":32.0,"y":32.0,},
         {"$GMRInstance":"v1","%Name":"inst_2464D85B","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2464D85B","objectId":{"name":"iDrinkList","path":"objects/iDrinkList/iDrinkList.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.27214718,"scaleY":0.296875,"x":96.0,"y":32.0,},

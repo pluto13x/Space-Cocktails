@@ -1,15 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"oBubble",
+  "%Name":"iDrinkListDone",
   "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"oBubble",
+  "name":"iDrinkListDone",
   "overriddenProperties":[],
   "parent":{
-    "name":"bar",
-    "path":"folders/Objects/bar.yy",
+    "name":"mixing station",
+    "path":"folders/Objects/mixing station.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -29,10 +29,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"sBubble",
-    "path":"sprites/sBubble/sBubble.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
