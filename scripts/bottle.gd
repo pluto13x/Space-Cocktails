@@ -30,8 +30,10 @@ func _process(_delta: float) -> void:
 			held = true
 			
 	if held:
+		z_index += 1
 		global_position.x = get_global_mouse_position().x
 		global_position.y = get_global_mouse_position().y
 	else: #snap back to og spot
+		z_index = 1
 		global_position.x = base_x
 		global_position.y = base_y
