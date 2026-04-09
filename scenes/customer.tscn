@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://bviqfblfp6hxc"]
+
+[ext_resource type="Texture2D" uid="uid://cqekt8t6d3qio" path="res://assets/characters/Pera.png" id="1_ktfjk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xss0h"]
+size = Vector2(75, 65)
+
+[node name="customer" type="StaticBody2D" unique_id=1877571620]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1702628472]
+scale = Vector2(4, 4)
+texture = ExtResource("1_ktfjk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1620101205]
+position = Vector2(-1.5, -25.5)
+scale = Vector2(4, 4)
+shape = SubResource("RectangleShape2D_xss0h")

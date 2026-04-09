@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://p55griesc8y4"]
+
+[ext_resource type="Texture2D" uid="uid://iyvufvqx6iju" path="res://assets/Pixel Art Bar and Cafe Items Pack/Liquor Bottle 1.png" id="1_724mw"]
+[ext_resource type="Script" uid="uid://b55kav8fg427w" path="res://scripts/bottle.gd" id="1_qr18b"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qr18b"]
+size = Vector2(12, 17)
+
+[node name="bottle" type="StaticBody2D" unique_id=1057977135]
+scale = Vector2(8, 8)
+input_pickable = true
+script = ExtResource("1_qr18b")
+
+[node name="sprite" type="Sprite2D" parent="." unique_id=1748934260]
+texture = ExtResource("1_724mw")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1130893214]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_qr18b")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
