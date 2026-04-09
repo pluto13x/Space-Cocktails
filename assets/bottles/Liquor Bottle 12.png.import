@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c1my81jxs22ig"
-path="res://.godot/imported/Liquor Bottle 13.png-553a4c880fb9d46c6e90e25dfeac914a.ctex"
+uid="uid://bttm1wrkapkbn"
+path="res://.godot/imported/Liquor Bottle 12.png-ce911ce74a68aa2f0ad1a3660e977174.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Pixel Art Bar and Cafe Items Pack/Liquor Bottle 13.png"
-dest_files=["res://.godot/imported/Liquor Bottle 13.png-553a4c880fb9d46c6e90e25dfeac914a.ctex"]
+source_file="res://assets/bottles/Liquor Bottle 12.png"
+dest_files=["res://.godot/imported/Liquor Bottle 12.png-ce911ce74a68aa2f0ad1a3660e977174.ctex"]
 
 [params]
 
