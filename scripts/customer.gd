@@ -1,4 +1,4 @@
-extends StaticBody2D
+extends Area2D
 
 var idx = 0
 var base_x = 0

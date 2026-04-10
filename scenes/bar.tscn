@@ -1,16 +1,19 @@
 [gd_scene format=3 uid="uid://dcuu01jj6grxl"]
 
-[ext_resource type="Script" uid="uid://dele62a80cmof" path="res://scenes/customers.gd" id="1_2j1ym"]
+[ext_resource type="Script" uid="uid://dele62a80cmof" path="res://scripts/customers.gd" id="1_2j1ym"]
 [ext_resource type="PackedScene" uid="uid://bviqfblfp6hxc" path="res://scenes/customer.tscn" id="1_bwlfd"]
+[ext_resource type="Script" uid="uid://u8xftqpxl7u3" path="res://scenes/bar.gd" id="1_l1w72"]
 [ext_resource type="Texture2D" uid="uid://ct8ut3jtnfjmc" path="res://icon.svg" id="2_x848m"]
-[ext_resource type="Script" uid="uid://d0yuj0w51l7q0" path="res://scenes/bottles.gd" id="3_efgdo"]
+[ext_resource type="Script" uid="uid://d0yuj0w51l7q0" path="res://scripts/bottles.gd" id="3_efgdo"]
 [ext_resource type="Texture2D" uid="uid://depemyk7t0lv5" path="res://assets/Pixel Art Bar and Cafe Items Pack/Shaker.png" id="3_qdsxc"]
 [ext_resource type="PackedScene" uid="uid://p55griesc8y4" path="res://scenes/bottle.tscn" id="4_efgdo"]
+[ext_resource type="Script" uid="uid://dbbljt8spbk43" path="res://scripts/shaker.gd" id="6_7r073"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2j1ym"]
 size = Vector2(80, 132)
 
 [node name="bar" type="Node2D" unique_id=1659649859]
+script = ExtResource("1_l1w72")
 
 [node name="customers" type="Node2D" parent="." unique_id=890814010]
 position = Vector2(0.5, -112)
@@ -38,7 +41,7 @@ position = Vector2(0.5, -112)
 script = ExtResource("3_efgdo")
 
 [node name="bottle0" parent="bottles" unique_id=106464335 instance=ExtResource("4_efgdo")]
-position = Vector2(172, 676)
+position = Vector2(59.5, 676)
 
 [node name="bottle1" parent="bottles" unique_id=1057977135 instance=ExtResource("4_efgdo")]
 position = Vector2(172, 676)
@@ -64,14 +67,19 @@ position = Vector2(884, 676)
 [node name="bottle8" parent="bottles" unique_id=549174547 instance=ExtResource("4_efgdo")]
 position = Vector2(996, 676)
 
-[node name="Shaker" type="StaticBody2D" parent="." unique_id=244051885]
-input_pickable = true
+[node name="Shaker" type="Area2D" parent="." unique_id=1975504351]
+position = Vector2(576, 404)
+script = ExtResource("6_7r073")
 
 [node name="Shaker" type="Sprite2D" parent="Shaker" unique_id=730077950]
-position = Vector2(560.5, 396)
+position = Vector2(4, 4)
 scale = Vector2(8, 8)
 texture = ExtResource("3_qdsxc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Shaker" unique_id=644750167]
-position = Vector2(556, 394)
+position = Vector2(-0.5, 2)
 shape = SubResource("RectangleShape2D_2j1ym")
+
+[connection signal="area_entered" from="Shaker" to="bottles" method="_on_shaker_area_entered"]
+[connection signal="mouse_entered" from="Shaker" to="Shaker" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Shaker" to="Shaker" method="_on_mouse_exited"]

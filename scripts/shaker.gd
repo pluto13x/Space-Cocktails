@@ -6,24 +6,20 @@ var base_y = 0
 
 var mouse_in = false
 var held = false
-
-
-func on_index_assigned():
-	$sprite.texture = load("res://assets/bottles/Liquor Bottle %d.png" % idx)
+var inside: Array[int] = []
 
 func _ready() -> void:
-	base_x = global_position.x
-	base_y = global_position.y
+	base_x = position.x
+	base_y = position.y
 
 func _on_mouse_entered() -> void:
 	mouse_in = true
-
 
 func _on_mouse_exited() -> void:
 	mouse_in = false
 	
 func _process(_delta: float) -> void:
-	#hold bottle
+	#region hold shaker
 	if mouse_in and Input.is_action_just_pressed("left_click"):
 		if held:
 			held = false
@@ -32,9 +28,11 @@ func _process(_delta: float) -> void:
 			
 	if held:
 		z_index += 1
-		global_position.x = get_global_mouse_position().x
-		global_position.y = get_global_mouse_position().y
+		position.x = get_global_mouse_position().x
+		position.y = get_global_mouse_position().y
 	else: #snap back to og spot
 		z_index = 0
-		global_position.x = base_x
-		global_position.y = base_y
+		position.x = base_x
+		position.y = base_y
+	#endregion
+	
