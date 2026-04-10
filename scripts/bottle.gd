@@ -1,5 +1,7 @@
 extends Area2D
 
+class_name Bottle
+
 var idx = 0
 var base_x = 0
 var base_y = 0
@@ -31,10 +33,13 @@ func _process(_delta: float) -> void:
 			held = true
 			
 	if held:
+		$"..".current_idx = idx
 		z_index += 1
 		global_position.x = get_global_mouse_position().x
 		global_position.y = get_global_mouse_position().y
 	else: #snap back to og spot
+		if $"..".current_idx == idx:
+			$"..".current_idx = -1
 		z_index = 0
 		global_position.x = base_x
 		global_position.y = base_y

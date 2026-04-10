@@ -81,5 +81,6 @@ position = Vector2(-0.5, 2)
 shape = SubResource("RectangleShape2D_2j1ym")
 
 [connection signal="area_entered" from="Shaker" to="bottles" method="_on_shaker_area_entered"]
+[connection signal="area_exited" from="Shaker" to="bottles" method="_on_shaker_area_exited"]
 [connection signal="mouse_entered" from="Shaker" to="Shaker" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Shaker" to="Shaker" method="_on_mouse_exited"]
