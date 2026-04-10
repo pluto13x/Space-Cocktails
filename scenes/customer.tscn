@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cqekt8t6d3qio" path="res://assets/characters/Pera.png" id="1_ktfjk"]
 [ext_resource type="Script" uid="uid://cpwabsdn1cij3" path="res://scripts/customer.gd" id="1_xss0h"]
+[ext_resource type="Script" uid="uid://dli2hlgmeo5sl" path="res://scripts/order.gd" id="3_8qg4y"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xss0h"]
 size = Vector2(47.75, 51.375)
@@ -17,3 +18,33 @@ texture = ExtResource("1_ktfjk")
 position = Vector2(-19.5, -52.75)
 scale = Vector2(4, 4)
 shape = SubResource("RectangleShape2D_xss0h")
+
+[node name="order" type="Control" parent="." unique_id=601503391]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 75.0
+offset_bottom = 70.0
+script = ExtResource("3_8qg4y")
+
+[node name="ColorRect" type="ColorRect" parent="order" unique_id=450240875]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -95.0
+offset_top = -17.0
+offset_right = 5.0
+offset_bottom = 19.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.0
+
+[node name="Label" type="Label" parent="order/ColorRect" unique_id=1539872341]
+layout_mode = 0
+offset_left = 23.0
+offset_top = 17.0
+offset_right = 145.0
+offset_bottom = 76.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
