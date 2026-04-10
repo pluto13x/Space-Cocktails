@@ -2,18 +2,26 @@
 
 [ext_resource type="Script" uid="uid://dele62a80cmof" path="res://scripts/customers.gd" id="1_2j1ym"]
 [ext_resource type="PackedScene" uid="uid://bviqfblfp6hxc" path="res://scenes/customer.tscn" id="1_bwlfd"]
-[ext_resource type="Script" uid="uid://u8xftqpxl7u3" path="res://scenes/bar.gd" id="1_l1w72"]
 [ext_resource type="Texture2D" uid="uid://ct8ut3jtnfjmc" path="res://icon.svg" id="2_x848m"]
 [ext_resource type="Script" uid="uid://d0yuj0w51l7q0" path="res://scripts/bottles.gd" id="3_efgdo"]
 [ext_resource type="Texture2D" uid="uid://depemyk7t0lv5" path="res://assets/Pixel Art Bar and Cafe Items Pack/Shaker.png" id="3_qdsxc"]
 [ext_resource type="PackedScene" uid="uid://p55griesc8y4" path="res://scenes/bottle.tscn" id="4_efgdo"]
 [ext_resource type="Script" uid="uid://dbbljt8spbk43" path="res://scripts/shaker.gd" id="6_7r073"]
+[ext_resource type="Script" uid="uid://7ualrem0ka86" path="res://scripts/glass.gd" id="9_v67d5"]
+[ext_resource type="Texture2D" uid="uid://jn86ukbgxvq0" path="res://assets/Pixel Art Bar and Cafe Items Pack/Glass 1.png" id="10_rrntp"]
+
+[sub_resource type="GDScript" id="GDScript_nqcov"]
+script/source = "extends Node2D
+"
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2j1ym"]
 size = Vector2(80, 132)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5qaxt"]
+size = Vector2(6, 7.5)
+
 [node name="bar" type="Node2D" unique_id=1659649859]
-script = ExtResource("1_l1w72")
+script = SubResource("GDScript_nqcov")
 
 [node name="customers" type="Node2D" parent="." unique_id=890814010]
 position = Vector2(0.5, -112)
@@ -80,7 +88,23 @@ texture = ExtResource("3_qdsxc")
 position = Vector2(-0.5, 2)
 shape = SubResource("RectangleShape2D_2j1ym")
 
+[node name="Glass" type="Area2D" parent="." unique_id=1886536266]
+position = Vector2(268, 404)
+scale = Vector2(8, 8)
+script = ExtResource("9_v67d5")
+
+[node name="Sprite2D" type="Sprite2D" parent="Glass" unique_id=151523968]
+texture = ExtResource("10_rrntp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Glass" unique_id=1505442040]
+position = Vector2(0, -0.25)
+shape = SubResource("RectangleShape2D_5qaxt")
+
 [connection signal="area_entered" from="Shaker" to="bottles" method="_on_shaker_area_entered"]
 [connection signal="area_exited" from="Shaker" to="bottles" method="_on_shaker_area_exited"]
 [connection signal="mouse_entered" from="Shaker" to="Shaker" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Shaker" to="Shaker" method="_on_mouse_exited"]
+[connection signal="area_entered" from="Glass" to="Shaker" method="_on_glass_area_entered"]
+[connection signal="area_exited" from="Glass" to="Shaker" method="_on_glass_area_exited"]
+[connection signal="mouse_entered" from="Glass" to="Glass" method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="Glass" to="Glass" method="_on_mouse_exited"]

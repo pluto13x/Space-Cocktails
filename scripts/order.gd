@@ -7,7 +7,6 @@ var orders: Array[Array] = [
 ]
 var order = -1
 
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	order = randi_range(0, orders.size()-1)
 	$ColorRect/Label.text = str(order)

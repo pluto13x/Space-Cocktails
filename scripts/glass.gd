@@ -1,16 +1,12 @@
 extends Area2D
 
-class_name Shaker
-
 var idx = 0
 var base_x = 0
 var base_y = 0
+var inside: Array[int] = []
 
 var mouse_in = false
 var held = false
-var hovering_over_glass = false
-var inside: Array[int] = []
-
 
 func _ready() -> void:
 	base_x = position.x
@@ -23,7 +19,7 @@ func _on_mouse_exited() -> void:
 	mouse_in = false
 	
 func _process(_delta: float) -> void:
-	#region hold shaker
+	#region hold 
 	if mouse_in and Input.is_action_just_pressed("left_click"):
 		if held:
 			held = false
@@ -40,16 +36,3 @@ func _process(_delta: float) -> void:
 		position.y = base_y
 	#endregion
 	
-	if hovering_over_glass and Input.is_action_just_pressed("right_click"):
-		$"../Glass".inside = inside
-		print($"../Glass".inside)
-		inside.clear()
-	
-
-func _on_glass_area_entered(area: Area2D) -> void:
-	if area is Shaker:
-		hovering_over_glass = true
-
-func _on_glass_area_exited(area: Area2D) -> void:
-	if area is Shaker:
-		hovering_over_glass = false
