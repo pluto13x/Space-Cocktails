@@ -1,11 +1,12 @@
 extends StaticBody2D
 
 var idx = 0
+var base_x = 0
+var base_y = 0
 
 var mouse_in = false
 var held = false
-var base_x = 0
-var base_y = 0
+
 
 func on_index_assigned():
 	$sprite.texture = load("res://assets/bottles/Liquor Bottle %d.png" % idx)
@@ -34,6 +35,6 @@ func _process(_delta: float) -> void:
 		global_position.x = get_global_mouse_position().x
 		global_position.y = get_global_mouse_position().y
 	else: #snap back to og spot
-		z_index = 1
+		z_index = 0
 		global_position.x = base_x
 		global_position.y = base_y

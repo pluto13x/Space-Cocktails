@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://dcuu01jj6grxl"]
 
+[ext_resource type="Script" uid="uid://dele62a80cmof" path="res://scenes/customers.gd" id="1_2j1ym"]
 [ext_resource type="PackedScene" uid="uid://bviqfblfp6hxc" path="res://scenes/customer.tscn" id="1_bwlfd"]
 [ext_resource type="Texture2D" uid="uid://ct8ut3jtnfjmc" path="res://icon.svg" id="2_x848m"]
 [ext_resource type="Script" uid="uid://d0yuj0w51l7q0" path="res://scenes/bottles.gd" id="3_efgdo"]
@@ -13,15 +14,19 @@ size = Vector2(80, 132)
 
 [node name="customers" type="Node2D" parent="." unique_id=890814010]
 position = Vector2(0.5, -112)
+script = ExtResource("1_2j1ym")
 
 [node name="customer" parent="customers" unique_id=1877571620 instance=ExtResource("1_bwlfd")]
 position = Vector2(248, 344)
 
 [node name="customer2" parent="customers" unique_id=139281436 instance=ExtResource("1_bwlfd")]
-position = Vector2(568, 344)
+position = Vector2(503.5, 344)
 
 [node name="customer3" parent="customers" unique_id=349911043 instance=ExtResource("1_bwlfd")]
-position = Vector2(884, 344)
+position = Vector2(743.5, 344)
+
+[node name="customer4" parent="customers" unique_id=1566118755 instance=ExtResource("1_bwlfd")]
+position = Vector2(987.5, 344)
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=709885841]
 position = Vector2(574.5, 533.625)
