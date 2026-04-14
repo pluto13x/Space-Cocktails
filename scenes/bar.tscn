@@ -27,17 +27,17 @@ script = SubResource("GDScript_nqcov")
 position = Vector2(0.5, -112)
 script = ExtResource("1_2j1ym")
 
-[node name="customer" parent="customers" unique_id=1877571620 instance=ExtResource("1_bwlfd")]
-position = Vector2(248, 344)
+[node name="customer0" parent="customers" unique_id=1566118755 instance=ExtResource("1_bwlfd")]
+position = Vector2(168.5, 337)
+
+[node name="customer1" parent="customers" unique_id=1877571620 instance=ExtResource("1_bwlfd")]
+position = Vector2(436.5, 347)
 
 [node name="customer2" parent="customers" unique_id=139281436 instance=ExtResource("1_bwlfd")]
-position = Vector2(503.5, 344)
+position = Vector2(680.5, 339)
 
 [node name="customer3" parent="customers" unique_id=349911043 instance=ExtResource("1_bwlfd")]
-position = Vector2(743.5, 344)
-
-[node name="customer4" parent="customers" unique_id=1566118755 instance=ExtResource("1_bwlfd")]
-position = Vector2(987.5, 344)
+position = Vector2(954.5, 342)
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=709885841]
 position = Vector2(574.5, 533.625)
@@ -100,6 +100,14 @@ texture = ExtResource("10_rrntp")
 position = Vector2(0, -0.25)
 shape = SubResource("RectangleShape2D_5qaxt")
 
+[connection signal="area_entered" from="customers/customer0" to="Glass" method="_on_customer_0_area_entered"]
+[connection signal="area_exited" from="customers/customer0" to="Glass" method="_on_customer_0_area_exited"]
+[connection signal="area_entered" from="customers/customer1" to="Glass" method="_on_customer_1_area_entered"]
+[connection signal="area_exited" from="customers/customer1" to="Glass" method="_on_customer_1_area_exited"]
+[connection signal="area_entered" from="customers/customer2" to="Glass" method="_on_customer_2_area_entered"]
+[connection signal="area_exited" from="customers/customer2" to="Glass" method="_on_customer_2_area_exited"]
+[connection signal="area_entered" from="customers/customer3" to="Glass" method="_on_customer_3_area_entered"]
+[connection signal="area_exited" from="customers/customer3" to="Glass" method="_on_customer_3_area_exited"]
 [connection signal="area_entered" from="Shaker" to="bottles" method="_on_shaker_area_entered"]
 [connection signal="area_exited" from="Shaker" to="bottles" method="_on_shaker_area_exited"]
 [connection signal="mouse_entered" from="Shaker" to="Shaker" method="_on_mouse_entered"]

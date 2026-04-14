@@ -17,3 +17,5 @@ func _process(delta: float) -> void:
 	elif global_position.y < base_y + 300 and not spawn:
 		global_position.y += 300 * delta 
 		
+	
+		
