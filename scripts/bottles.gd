@@ -24,5 +24,6 @@ func _process(_delta: float) -> void:
 	if hovering_over_shaker:
 		if Input.is_action_just_pressed("right_click") and current_idx != -1:
 			$"../Shaker".inside.append(current_idx)
+			$"../Shaker".inside.sort()
 			print($"../Shaker".inside)
 		

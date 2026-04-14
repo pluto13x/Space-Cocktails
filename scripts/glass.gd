@@ -35,6 +35,12 @@ func _process(_delta: float) -> void:
 		z_index += 1
 		position.x = get_global_mouse_position().x
 		position.y = get_global_mouse_position().y
+		if Input.is_action_just_pressed("right_click"): #check order
+			for i in range(len(hovering)):
+				if hovering[i]:
+					$"../customers".customers[i].check_order()
+					return
+					
 	else: #snap back to og spot
 		z_index = 0
 		position.x = base_x
