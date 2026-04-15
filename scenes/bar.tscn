@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://dele62a80cmof" path="res://scripts/customers.gd" id="1_2j1ym"]
 [ext_resource type="PackedScene" uid="uid://bviqfblfp6hxc" path="res://scenes/customer.tscn" id="1_bwlfd"]
+[ext_resource type="Script" uid="uid://spwfndvc4un2" path="res://scripts/day_control.gd" id="1_rrntp"]
 [ext_resource type="Texture2D" uid="uid://ct8ut3jtnfjmc" path="res://icon.svg" id="2_x848m"]
 [ext_resource type="Script" uid="uid://d0yuj0w51l7q0" path="res://scripts/bottles.gd" id="3_efgdo"]
 [ext_resource type="Texture2D" uid="uid://depemyk7t0lv5" path="res://assets/Pixel Art Bar and Cafe Items Pack/Shaker.png" id="3_qdsxc"]
@@ -26,6 +27,9 @@ size = Vector2(128, 126)
 
 [node name="bar" type="Node2D" unique_id=1659649859]
 script = SubResource("GDScript_nqcov")
+
+[node name="DayControl" type="Node2D" parent="." unique_id=737907009]
+script = ExtResource("1_rrntp")
 
 [node name="customers" type="Node2D" parent="." unique_id=890814010]
 position = Vector2(0.5, -112)

@@ -15,6 +15,10 @@ run/main_scene="uid://dcuu01jj6grxl"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
 
+[autoload]
+
+TransitionScreen="*uid://bl3wxiyfxi28h"
+
 [input]
 
 left_click={

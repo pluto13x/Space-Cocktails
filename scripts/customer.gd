@@ -42,5 +42,6 @@ func check_order():
 		$"../../Glass".position = Vector2($"../../Glass".base_x, $"../../Glass".base_y)
 		$"../../Glass".held = false
 		$"../../Glass".inside.clear()
+		$"../../DayControl".customers_served += 1
 	else:
 		print("fail")
