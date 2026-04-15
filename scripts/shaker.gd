@@ -41,7 +41,8 @@ func _process(_delta: float) -> void:
 	#endregion
 	
 	if hovering_over_glass and Input.is_action_just_pressed("right_click"):
-		$"../Glass".inside = inside.duplicate()
+		$"../Glass".inside += inside.duplicate()
+		$"../Glass".inside.sort()
 		print($"../Glass".inside)
 		inside.clear()
 	

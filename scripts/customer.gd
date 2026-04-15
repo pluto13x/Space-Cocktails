@@ -5,6 +5,7 @@ var base_x = 0
 var base_y = 0
 var spawn = true
 var order_idx = -1
+	
 
 func _ready() -> void:
 	base_x = global_position.x
@@ -24,5 +25,9 @@ func check_order():
 	print($order.orders[order_idx])
 	if $"../../Glass".inside == $order.orders[order_idx]:
 		print("success")
+		spawn = false
+		$"../../Glass".position = Vector2($"../../Glass".base_x, $"../../Glass".base_y)
+		$"../../Glass".held = false
+		$"../../Glass".inside.clear()
 	else:
 		print("fail")
