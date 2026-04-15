@@ -9,6 +9,7 @@
 [ext_resource type="Script" uid="uid://dbbljt8spbk43" path="res://scripts/shaker.gd" id="6_7r073"]
 [ext_resource type="Script" uid="uid://7ualrem0ka86" path="res://scripts/glass.gd" id="9_v67d5"]
 [ext_resource type="Texture2D" uid="uid://jn86ukbgxvq0" path="res://assets/Pixel Art Bar and Cafe Items Pack/Glass 1.png" id="10_rrntp"]
+[ext_resource type="Script" uid="uid://dy8qpg733gwrx" path="res://scripts/sink.gd" id="10_v67d5"]
 
 [sub_resource type="GDScript" id="GDScript_nqcov"]
 script/source = "extends Node2D
@@ -19,6 +20,9 @@ size = Vector2(80, 132)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_5qaxt"]
 size = Vector2(6, 7.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rrntp"]
+size = Vector2(128, 126)
 
 [node name="bar" type="Node2D" unique_id=1659649859]
 script = SubResource("GDScript_nqcov")
@@ -100,6 +104,16 @@ texture = ExtResource("10_rrntp")
 position = Vector2(0, -0.25)
 shape = SubResource("RectangleShape2D_5qaxt")
 
+[node name="Sink" type="Area2D" parent="." unique_id=54069329]
+position = Vector2(934, 411)
+script = ExtResource("10_v67d5")
+
+[node name="Sprite2D" type="Sprite2D" parent="Sink" unique_id=96122064]
+texture = ExtResource("2_x848m")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sink" unique_id=2011372894]
+shape = SubResource("RectangleShape2D_rrntp")
+
 [connection signal="area_entered" from="customers/customer0" to="Glass" method="_on_customer_0_area_entered"]
 [connection signal="area_exited" from="customers/customer0" to="Glass" method="_on_customer_0_area_exited"]
 [connection signal="area_entered" from="customers/customer1" to="Glass" method="_on_customer_1_area_entered"]
@@ -116,3 +130,5 @@ shape = SubResource("RectangleShape2D_5qaxt")
 [connection signal="area_exited" from="Glass" to="Shaker" method="_on_glass_area_exited"]
 [connection signal="mouse_entered" from="Glass" to="Glass" method="_on_mouse_entered"]
 [connection signal="mouse_exited" from="Glass" to="Glass" method="_on_mouse_exited"]
+[connection signal="area_entered" from="Sink" to="Sink" method="_on_area_entered"]
+[connection signal="area_exited" from="Sink" to="Sink" method="_on_area_exited"]
