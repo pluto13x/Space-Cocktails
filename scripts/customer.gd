@@ -5,20 +5,33 @@ var base_x = 0
 var base_y = 0
 var spawn = true
 var order_idx = -1
+var spawned = false
 	
 
 func _ready() -> void:
 	base_x = global_position.x
 	base_y = global_position.y
 	
-	global_position.y += 300
+	$Sprite2D.global_position.y += 300
 	
 func _process(delta: float) -> void:
-	if global_position.y > base_y and spawn:
-		global_position.y -= 300 * delta 
-	elif global_position.y < base_y + 300 and not spawn:
-		global_position.y += 300 * delta
-		
+	if $Sprite2D.global_position.y > base_y and spawn:
+		$Sprite2D.global_position.y -= 300 * delta 
+		spawned = false
+	elif $Sprite2D.global_position.y < base_y + 300 and not spawn:
+		$Sprite2D.global_position.y += 300 * delta
+		spawned = false
+	elif $Sprite2D.global_position.y <= base_y:
+		spawned = true
+
+	#only detect collissions if spawned
+	if spawned: 
+		monitoring = true
+		monitorable = true
+	else:
+		monitoring = false
+		monitorable = false
+
 
 func check_order():
 	print($"../../Glass".inside)
